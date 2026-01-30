@@ -1,0 +1,50 @@
+.coming-container {
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1555243896-c709bfa0b564");
+  background-size: cover;
+  background-position: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+
+.content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.tagline {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+.coming-text {
+  font-size: 2.5rem;
+  margin: 20px 0;
+  color: #f8c146;
+}
+
+.desc {
+  font-size: 1rem;
+  max-width: 500px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.contact {
+  margin-top: 20px;
+  font-size: 0.95rem;
+}
