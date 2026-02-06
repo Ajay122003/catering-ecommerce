@@ -1,12 +1,15 @@
-import {  Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import SplashScreen from "./components/splash/SplashScreen";
 import Home from "./components/Home";
 import AOS from "aos";
 import { useEffect } from "react";
-
+import UserLayout from "./components/Layout/UserLayout";
+import Contact from "./components/Pages/Contact";
+import Services from "./components/Pages/Services";
+import Gallery from "./components/Pages/Gallery";
 
 function App() {
-   useEffect(() => {
+  useEffect(() => {
     AOS.init({
       duration: 1200,
       easing: "ease-out-cubic",
@@ -15,15 +18,18 @@ function App() {
   }, []);
 
   return (
-    
-      <Routes>
-        {/* Splash animation page */}
-        <Route path="/" element={<SplashScreen />} />
+    <Routes>
+      {/* Splash Screen – NO Navbar / Footer */}
+      <Route path="/" element={<SplashScreen />} />
 
-        {/* Home page */}
+      {/* Pages WITH Navbar + Footer */}
+      <Route element={<UserLayout />}>
         <Route path="/home" element={<Home />} />
-      </Routes>
-    
+         <Route path="/contact" element={<Contact />} />
+         <Route path="/service" element={<Services />} />
+         <Route path="/gallery" element={<Gallery />} />
+      </Route>
+    </Routes>
   );
 }
 
