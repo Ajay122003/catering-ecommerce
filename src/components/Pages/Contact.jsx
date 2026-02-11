@@ -48,8 +48,8 @@ export default function Contact() {
                 📍 Address
               </h4>
               <p className="text-gray-600 leading-relaxed">
-                No.12, Main Road,<br />
-                Chennai, Tamil Nadu – 600001
+                Muthu Nagar Line Stop, Masakkalipalayam, Near Sri Vishnu Vidyalaya School ,
+                Upplipalayam Post, Coimbatore - 641 015
               </p>
             </div>
 
@@ -78,8 +78,8 @@ export default function Contact() {
                 📞 Phone
               </h4>
               <p className="text-gray-600">
-                +91 93421 98948<br />
-                +91 87783 39644
+                +91 72006 70939<br />
+                +91 95782 21116
               </p>
             </div>
 
@@ -93,7 +93,7 @@ export default function Contact() {
                 ✉️ Email
               </h4>
               <p className="text-gray-600">
-                kavericatering@gmail.com
+                kavericatering65@gmail.com
               </p>
             </div>
 

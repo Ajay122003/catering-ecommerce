@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import SplashScreen from "./components/splash/SplashScreen";
 import Home from "./components/Home";
 import AOS from "aos";
+import "aos/dist/aos.css"; 
 import { useEffect } from "react";
 import UserLayout from "./components/Layout/UserLayout";
 import Contact from "./components/Pages/Contact";

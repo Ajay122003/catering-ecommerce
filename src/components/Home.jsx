@@ -5,46 +5,58 @@ export default function Home() {
   return (
     <div className="pt-16">
 
-      {/* ===== BANNER IMAGE ONLY ===== */}
-      {/* ===== RESPONSIVE BANNER IMAGE ===== */}
-<section className="w-full h-auto md:h-[80vh]">
-  <img
-    src={banner}
-    alt="Kaveri Catering Banner"
-    className="
-      w-full
-      h-auto
-      md:h-full
-      object-contain
-      md:object-cover
-    "
-  />
-</section>
+      {/* ===== HERO BANNER ===== */}
+      <section className="relative w-full md:h-[85vh] overflow-hidden">
+        <img
+          src={banner}
+          alt="Kaveri Catering Banner"
+          className="w-full h-full object-cover"
+        />
 
+        {/* Overlay */}
+       
+      </section>
 
       {/* ===== SERVICES ===== */}
-      <section className="py-16 bg-gray-100">
+      <section className="py-20 bg-gray-100">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">
-            Our Services
+          <h2
+            className="text-4xl font-bold text-center mb-8"
+            data-aos="fade-down"
+          >
+            Our Premium Services
           </h2>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-10">
             {[
-              "Wedding Catering",
-              "Corporate Catering",
-              "Birthday & Party Orders",
-            ].map((service) => (
+              {
+                title: "Wedding Catering",
+                desc: "Traditional & modern menus crafted for your big day.",
+              },
+              {
+                title: "Corporate Catering",
+                desc: "Professional catering for meetings & events.",
+              },
+              {
+                title: "Party Orders",
+                desc: "Birthdays, anniversaries & celebrations made tasty.",
+              },
+            ].map((service, i) => (
               <div
-                key={service}
-                className="bg-white p-6 rounded-xl shadow hover:shadow-lg transition text-center"
+                key={service.title}
+                data-aos="fade-up"
+                data-aos-delay={i * 150}
+                className="
+                bg-white p-8 rounded-2xl shadow-md
+                hover:shadow-2xl hover:-translate-y-2
+                transition duration-300 text-center
+              "
               >
-                <h3 className="text-xl font-semibold mb-3">
-                  {service}
+                <h3 className="text-2xl font-semibold mb-3">
+                  {service.title}
                 </h3>
                 <p className="text-gray-600">
-                  High-quality food prepared by expert chefs,
-                  customized to your needs.
+                  {service.desc}
                 </p>
               </div>
             ))}
@@ -52,16 +64,30 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== CALL TO ACTION ===== */}
-      <section className="py-16 bg-[#7b1c1c] text-white text-center">
-        <h2 className="text-3xl font-bold">
-          Make Your Event Memorable With Us
+      {/* ===== CTA ===== */}
+      <section className="py-20 bg-[#20B58F] text-black text-center">
+        <h2
+          className="text-4xl font-bold mb-4"
+          data-aos="zoom-in"
+        >
+          Make Your Event Deliciously Memorable
         </h2>
-        <p className="mt-4 text-white/90">
-          Contact us today for best catering services.
+
+        <p
+          className="text-black/90 mb-6"
+          data-aos="fade-up"
+        >
+          Book our catering today and experience quality,
+          taste & elegance.
         </p>
 
-        <button className="mt-6 bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition">
+        <button
+          className="
+            bg-yellow-400 text-black px-10 py-4 rounded-full
+            font-bold hover:bg-yellow-300 transition
+          "
+          data-aos="flip-up"
+        >
           Contact Us
         </button>
       </section>

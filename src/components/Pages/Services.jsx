@@ -1,10 +1,10 @@
 import React from "react";
 
-import wedding from "../../assets/Images/logo.jpeg";
-import corporate from "../../assets/Images/logo.jpeg";
-import birthday from "../../assets/Images/logo.jpeg";
-import outdoor from "../../assets/Images/logo.jpeg";
-import bulk from "../../assets/Images/logo.jpeg";
+import wedding from "../../assets/Images/g1.jpeg";
+import corporate from "../../assets/Images/g5.jpeg";
+import birthday from "../../assets/Images/g8.jpeg";
+import outdoor from "../../assets/Images/g9.jpeg";
+import bulk from "../../assets/Images/g10.jpeg";
 
 export default function Services() {
   const services = [

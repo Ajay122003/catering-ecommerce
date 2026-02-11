@@ -1,11 +1,12 @@
 import React from "react";
 
-import g1 from "../../assets/Images/logo.jpeg";
-import g2 from "../../assets/Images/logo.jpeg";
-import g3 from "../../assets/Images/logo.jpeg";
-import g4 from "../../assets/Images/logo.jpeg";
-import g5 from "../../assets/Images/logo.jpeg";
-import g6 from "../../assets/Images/logo.jpeg";
+import g1 from "../../assets/Images/g12.jpeg";
+import g2 from "../../assets/Images/g3.jpeg";
+import g3 from "../../assets/Images/g7.jpeg";
+import g4 from "../../assets/Images/g5.jpeg";
+import g5 from "../../assets/Images/g4.jpeg";
+import g6 from "../../assets/Images/g11.jpeg";
+
 
 export default function Gallery() {
   const galleryItems = [
